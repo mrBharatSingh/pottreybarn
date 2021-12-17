@@ -1,12 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 #navTop {
   padding: 15px 0px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid gray;
 }
 
 #navTop div {
@@ -26,7 +29,8 @@
 #navSecondDiv {
   display: flex;
   justify-content: space-between;
-  margin: 50px 50px 0px 50px;
+  align-items: flex-end;
+  margin: 20px 50px 0px 50px;
 }
 
 #navSearchDiv {
@@ -69,14 +73,15 @@
 }
 #potteryLogo {
   /* width: 50%; */
-  width: 480px;
-  height: 30px;
+  width: 550px;
+  height: 60px;
   margin: auto;
 }
 #navThirdDiv {
   margin-top: 20px;
   border-bottom: 1px solid gray;
 }
+
 #navThirdDivMenu {
   display: flex;
   margin: auto;
@@ -116,6 +121,8 @@
   width: 100%;
   background-color: white;
   display: none;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #navSecondHoverBox {
@@ -126,11 +133,19 @@
 
 #navSecondHoverBox div {
   margin-right: 25px;
+  width: 175px;
+  font-size: 10px;
 }
 
 #navSecondHoverBox div img {
   width: 175px;
   height: 218px;
+}
+#navSecondHoverBox div img ~ p {
+  font-size: 10px;
+}
+#navSecondHoverBox div .navheadBold {
+  font-size: 14px;
 }
 .navheadBold {
   font-size: 18px;
@@ -144,10 +159,15 @@
 #navFourthHover {
   margin-top: 5px;
   padding: 20px;
-  /* display: none; */
+  display: none;
   position: absolute;
   background-color: white;
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#navFourthDiv:hover #navFourthHover {
+  display: block;
 }
 
 #navFourthHoverBox {
@@ -215,4 +235,79 @@
 
 #navFourthHoverBox1 #navSaleimgDiv {
   width: 280px;
+}
+
+#mainfooter {
+  padding: 50px 0px 25px 0px;
+  font-size: 14px;
+  background-color: #e6e3de;
+  width: 100%;
+}
+#footerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+#footerBox2,
+#footerBox3,
+#footerBox4 {
+  padding-left: 50px;
+}
+
+#footerContainer div ul li {
+  list-style: none;
+  line-height: 30px;
+}
+
+#footerContainer div p {
+  line-height: 30px;
+}
+
+#footerinput {
+  margin: 10px 0px;
+  padding-left: 10px;
+  height: 40px;
+  width: 230px;
+  border: 2px solid #d0d0d0;
+  border-right: none;
+}
+#footerSignBtn {
+  margin: 10px 0px;
+  height: 43px;
+  width: 100px;
+  font-size: 20px;
+  vertical-align: top;
+  background-color: black;
+  color: white;
+  border: none;
+}
+#footerUl {
+  margin-top: 20px;
+}
+
+#footerBold {
+  font-weight: bold;
+  font-size: 14px;
+}
+#footerBoldff {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 14px;
+}
+#footerBox4Icons {
+  display: flex;
+}
+
+#footerBox4Icons p {
+  display: flex;
+  margin: 10px;
+  color: white;
+  font-size: 16px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
 }

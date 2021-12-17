@@ -1,3 +1,166 @@
+function wholeNav(){
+    return  `  <div id="navContainer">
+    <div id="navTop">
+        <div>
+            <p>PB Contract</p>
+            <p>PB/Apartment</p>
+            <p>Pottery Barn Kids</p>
+            <p>Pottery Barn Teen</p>
+            <p>Williams Sonoma</p>
+            <p>WS Home</p>
+            <p>West Elm</p>
+            <p>Rejuvenation</p>
+            <p>Mark & Graham</p>
+        </div>
+        <div>
+            <p><i class="fas fa-map-marker-alt"></i>My Store</p>
+            <p>Key Rewards<i class="fas fa-home-lg-alt"></i></p>
+            <p>Track Order<i class="fas fa-truck"></i></p>
+            <p>Ship To</p>
+        </div>
+    </div>
+
+    <div id="navSecondDiv">
+        <div id="navSearchDiv">
+            <input type="text" id="navSearchInput" placeholder="Search">
+            <button id="navSearchBtn"><i class="far fa-search"></i></button>
+        </div>
+        <div id="navlogoDiv">
+            <img src="https://assets.pbimgs.com/pbimgs/ab/images/i/202143/0031/images/checkout/svg/logoDesktop.svg"
+                alt="" id="potteryLogo">
+        </div>
+        <div id="navSecondOption">
+            <div><i class="fas fa-user-alt"></i>
+                <p>Sign In</p>
+            </div>
+            <div><i class="fas fa-home-heart"></i>
+                <p> Wedding Registry</p>
+            </div>
+            <div><i class="fas fa-heart"></i>
+                <p>Favorites</p>
+            </div>
+            <div><i class="fas fa-shopping-cart"></i>
+                <p>Cart(0)</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="navThirdDiv">
+        <div id="navThirdDivMenu">
+            <p id="navValues">Our Values</p>
+            <p id="navSustain">Sustainability</p>
+            <p id="navDesign">Design Services</p>
+            <p id="navInspir">Inspiration</p>
+            <p id="navNewnow">New & Now</p>
+            <p id="navBestsell">Bestsellers</p>
+            <p id="navColl">Collaborations</p>
+        </div>
+        <div id="navSecondHover">
+
+        </div>
+    </div>
+
+    <div id="navFourthDiv">
+        <div id="navFourthDiv1">
+            <p id="navfFurniture">Furniture</p>
+            <p id="navfOutdoor">Outdoor & Garden</p>
+            <p id="navfBedding">Bedding</p>
+            <p id="navfBath">Bath</p>
+            <p id="navfRugs">Rugs</p>
+            <p id="navfWindows">Windows</p>
+            <p id="navfLighting">Lighting</p>
+            <p id="navfPillows">Pillows & Decor</p>
+            <p id="navfMirrors">Mirrors & Art</p>
+            <p id="navfTabletop">Tabletop & Bar</p>
+            <p id="navfOrganization">Organization</p>
+            <p id="navfHolidays">Holidays</p>
+            <p id="navfGifts">Gifts</p>
+            <p id="navfSale">Sale</p>
+        </div>
+        <div id="navFourthHover">
+
+        </div>
+    </div>
+</div>`
+}
+
+function footer(){
+    return `<div id="footerContainer">
+    <div id="footerBox1">
+        <ul>
+            <li id="footerBold">CUSTOMER SERVICE</li>
+            <li>Contact Us</li>
+            <li>Track Your Order</li>
+            <li>Returns & Exchanges</li>
+            <li>Shipping Information</li>
+            <li>International Orders</li>
+            <li>Email Preferences</li>
+            <li>Help Topics</li>
+            <li>Give Us Feedback</li>
+        </ul>
+    </div>
+    <div id="footerBox2">
+        <ul>
+            <li id="footerBold">ABOUT US</li>
+            <li>Our Story</li>
+            <li>Careers</li>
+            <li>Press</li>
+            <li>Influencers</li>
+            <li>Find a Store</li>
+        </ul>
+        <ul id="footerUl">
+            <li>B2B PROGRAMS</li>
+            <li>Overview</li>
+            <li>Trade</li>
+            <li>Contract</li>
+            <li>Corporate Gifting</li>
+        </ul>
+    </div>
+    <div id="footerBox3">
+        <ul>
+            <li id="footerBold">DESIGN SERVICES</li>
+            <li>Free Interior Design</li>
+            <li>Installation Services</li>
+            <li>Room Planner</li>
+            <li>Start a Design Chat</li>
+        </ul>
+        <ul id="footerUl">
+            <li id="footerBold">RESOURCES</li>
+            <li>Pottery Barn Credit Card</li>
+            <li>Pay Bill Online</li>
+            <li>View Online Catalog</li>
+            <li>Request a Catalog</li>
+            <li>Address Change</li>
+            <li>Gift Cards</li>
+        </ul>
+    </div>
+    <div id="footerBox4">
+        <p>Join our VIP list for inspiration, new arrivals & more</p>
+        <input type="text" id="footerinput" placeholder=" ENTER YOUR EMAIL"><button id="footerSignBtn">SIGN
+            UP</button>
+        <p>California residents, please see the Financial Incentive Terms for terms.</p>
+        <p id="footerBoldff">FOLLOW US</p>
+        <div id="footerBox4Icons">
+            <p><i class="fab fa-instagram"></i></p>
+            <p><i class="fab fa-facebook-f"></i></p>
+            <p><i class="fab fa-pinterest"></i></p>
+            <p><i class="fab fa-youtube"></i></p>
+            <p><i class="fab fa-twitter"></i></p>
+        </div>
+        <p>*Some exclusions apply. Click here for details.</p>
+
+    </div>
+</div>
+<div style="margin:20px auto; font-size: 12px; width: fit-content;">
+    <p>
+        © 2021 Williams-Sonoma, Inc. All Rights Reserved |Terms & Conditions (Updated April
+        2020)|Accessibility|Privacy Policy (Updated January 2020)|Legal Statement
+    </p>
+</div>`
+}
+
+
 function ourValues(){
     return`<div id="navSecondHoverBox">
     <div>
@@ -8,8 +171,8 @@ function ourValues(){
     </div>
     <div>
         <img src="https://assets.pbimgs.com/pbimgs/ab/images/dp/ecm/202141/1804/037/331.jpg" alt="">
-        <p class="navheadBold">Good for People, Good for the</p>
-        <p class="navheadBold">Planet</p>
+        <p class="navheadBold">Good for People, Good for the Planet</p>
+        
         <p>From our factories to your homes,</p>
         <p>we're making things more sustainably > </p>
     </div>
@@ -43,8 +206,8 @@ function sustainability(){
     return` <div id="navSecondHoverBox">
     <div>
         <img src="https://assets.pbimgs.com/pbimgs/ab/images/dp/ecm/202119/0351/001/001.jpg" alt="">
-        <p class="navheadBold">Good for People, Good for the</p>
-        <p class="navheadBold">Planet </p>
+        <p class="navheadBold">Good for People, Good for the Planet </p>
+        
         <p>From our factories to your homes,</p>
         <p>we're making things more sustainably ></p>
     </div>
@@ -1532,4 +1695,6 @@ function sale(){
 
 </div>`
 }
-export {ourValues, sustainability, design, inspiration, newNow, collaborations}
+export {wholeNav,footer,ourValues, sustainability, design, inspiration, newNow, collaborations}
+
+export{furniture, outdoor, bedding, bath, rugs, windows, lighting, pillows, mirrors, tabletop, organization, holidays, gifts,sale}
