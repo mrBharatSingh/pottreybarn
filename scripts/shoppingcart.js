@@ -149,3 +149,10 @@ total()
 var disItem=document.getElementById("cartTotalItem")
 disItem.textContent=`(${CartData.length} Item)`
 console.log(totolPrice)
+
+var checkoutBtn=document.getElementById("cartCheckout")
+
+
+checkoutBtn.onclick=function(){
+    window.location.href="checkout.html"
+}
