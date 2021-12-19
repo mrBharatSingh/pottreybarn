@@ -85,7 +85,11 @@ if(addcflag){
 
     localStorage.setItem("ShoppingCartData",JSON.stringify(cartArrdata))
     cartTlength()
+    alert("Product Successfully Added to Cart ")
 
+}
+else{
+    alert("Product is already in cart")
 }
 
    
