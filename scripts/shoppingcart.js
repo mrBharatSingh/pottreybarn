@@ -1,25 +1,25 @@
 
-var shoppingCartDataX=[
-    {image:`https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202151/0209/img54j.jpg`,
-    name:"Raylan Recycled Glass USB Table Lamp, Bronze & Brass",
-    price: 500,
-   id:"#84-6871521"},
-   {image:`https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202134/4681/img90j.jpg`,
-    name:`60" Spitfire Indoor/Outdoor Ceiling Fan, Black Motor with White Blades`,
-    price: 500,
-   id:"#84-6871521"},
+// var shoppingCartDataX=[
+//     {image:`https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202151/0209/img54j.jpg`,
+//     name:"Raylan Recycled Glass USB Table Lamp, Bronze & Brass",
+//     price: 500,
+//    id:"#84-6871521"},
+//    {image:`https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202134/4681/img90j.jpg`,
+//     name:`60" Spitfire Indoor/Outdoor Ceiling Fan, Black Motor with White Blades`,
+//     price: 500,
+//    id:"#84-6871521"},
 
-   {image:`https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202151/0209/img54j.jpg`,
-   name:"Raylan Recycled Glass USB Table Lamp, Bronze & Brass",
-   price: 500,
-  id:"#84-6871521"},
-  {image:`https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202134/4681/img90j.jpg`,
-  name:`60" Spitfire Indoor/Outdoor Ceiling Fan, Black Motor with White Blades`,
-  price: 500,
- id:"#84-6871521"}
-]
+//    {image:`https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202151/0209/img54j.jpg`,
+//    name:"Raylan Recycled Glass USB Table Lamp, Bronze & Brass",
+//    price: 500,
+//   id:"#84-6871521"},
+//   {image:`https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202134/4681/img90j.jpg`,
+//   name:`60" Spitfire Indoor/Outdoor Ceiling Fan, Black Motor with White Blades`,
+//   price: 500,
+//  id:"#84-6871521"}
+// ]
 
-localStorage.setItem("ShoppingCartData",JSON.stringify(shoppingCartDataX))
+// localStorage.setItem("ShoppingCartData",JSON.stringify(shoppingCartDataX))
 
 var CartData=JSON.parse(localStorage.getItem("ShoppingCartData"))
 
@@ -27,8 +27,11 @@ console.log(CartData)
 
 
 var totolPrice=0;
-var totalArr=[]
+var totalArr=[];
+var qtyarr1=[];
 appendCartItem()
+
+
 
 
 
@@ -38,7 +41,8 @@ function appendCartItem(){
     CartData.forEach((item,index) => {
         var subtotal=item.price;
         // console.log(index)
-        totalArr[index]=subtotal
+        totalArr[index]=subtotal;
+        qtyarr1[index]=1;
 
         var itemDiv=document.createElement("div")
         itemDiv.id="cartItembox"
@@ -62,6 +66,7 @@ function appendCartItem(){
         removebtn.addEventListener("click",function(){
             CartData.splice(index, 1)
             totalArr.splice(index, 1)
+            qtyarr1.splice(index, 1)
             localStorage.setItem("ShoppingCartData",JSON.stringify(CartData))
            console.log("clicked",CartData)
            appendCartItem()
@@ -94,11 +99,12 @@ function appendCartItem(){
        var updateBtn=document.createElement("p")
        updateBtn.innerHTML="<b>Update</b>"
 
-
+    //    item.qty=1;
 
        updateBtn.addEventListener("click",function(){
         subtotal=item.price;
         subtotal*=qinput.value;
+        qtyarr1[index]=qinput.value
            console.log(subtotal)
            totext1.textContent="$"+subtotal
            totalArr[index]=subtotal
@@ -154,5 +160,7 @@ var checkoutBtn=document.getElementById("cartCheckout")
 
 
 checkoutBtn.onclick=function(){
+localStorage.setItem("ShoppingCartData",JSON.stringify(CartData))
+localStorage.setItem("qtyarr",JSON.stringify(qtyarr1))
     window.location.href="checkout.html"
 }

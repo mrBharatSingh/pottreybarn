@@ -15,9 +15,10 @@
 <nav>
     <div id="checkoutnavbar">
         <p id="navcheckdot">.</p>
-        <img src="https://assets.pbimgs.com/pbimgs/ab/images/i/202143/0031/images/checkout/svg/logoDesktop.svg" alt="">
+        <img src="https://assets.pbimgs.com/pbimgs/ab/images/i/202143/0031/images/checkout/svg/logoDesktop.svg" alt=""
+            id="secondlogo">
         <div id="checkoutCart"><i class="fas fa-shopping-cart"></i>
-            <p>Cart(0)</p>
+            <p id="CartIconP">Cart(0)</p>
         </div>
     </div>
 </nav>
@@ -115,9 +116,7 @@
 
             <h1>2. Delivery & Gift Options</h1>
             <div id="addMainBox1">
-                <!-- <div id="homeSelect">
-
-                </div> -->
+                <div id="displaypp"></div>
 
 
                 <div id="checkoutButtonDiv"> <button id="CheckoutAddConti1">Continue</button></div>
@@ -233,12 +232,12 @@
 
         <div id="csummaryBox">
             <h1>Order Summary</h1>
-            <p>Your Order (2 Items)</p>
+            <p id="yourItem">Your Order (2 Items)</p>
             <div></div>
             <div>
                 <div id="summaryFlex1">
                     <p>Subtotal</p>
-                    <p><b>$0</b></p>
+                    <p><b id="finalPrice">$0</b></p>
                 </div>
                 <div id="summaryFlex">
                     <p>Shipping & Processing</p>
@@ -250,7 +249,7 @@
                 </div>
                 <div id="summaryFlex1">
                     <p><b>Total</b></p>
-                    <p><b>$698</b></p>
+                    <p><b id="finalPrice1">$698</b></p>
                 </div>
             </div>
             <div id="summaryimgOff">

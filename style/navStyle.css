@@ -6,7 +6,7 @@
 }
 
 #navTop {
-  padding: 15px 0px;
+  padding: 15px 15px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid gray;
@@ -86,13 +86,22 @@
   display: flex;
   margin: auto;
   width: fit-content;
-  padding: 15px;
+
   position: relative;
 }
 
 #navThirdDiv div p {
   margin-right: 20px;
   font-size: 14px;
+  cursor: pointer;
+}
+
+#navThirdDivMenu p {
+  padding: 15px 10px;
+}
+
+#navThirdDivMenu p:hover {
+  border-bottom: 2px solid gray;
 }
 
 #navFourthDiv {
@@ -103,7 +112,6 @@
   display: flex;
   margin: auto;
   width: fit-content;
-  padding: 15px;
 
   position: relative;
 }
@@ -111,6 +119,12 @@
 #navFourthDiv1 p {
   margin-right: 20px;
   font-size: 14px;
+  cursor: pointer;
+  padding: 15px 0px;
+}
+
+#navFourthDiv1 p:hover {
+  border-bottom: 2px solid gray;
 }
 
 #navSecondHover {
@@ -123,6 +137,7 @@
   display: none;
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
 }
 
 #navSecondHoverBox {
@@ -310,4 +325,33 @@
   justify-content: center;
   align-items: center;
   background-color: black;
+}
+#loginPopul {
+  border-top: 2px solid black;
+  width: 130px;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: none;
+  background-color: white;
+  z-index: 3;
+  position: absolute;
+}
+
+#loginPopul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+#loginPopul li :hover {
+  border-bottom: 1px solid gray;
+}
+
+#loginPopul li {
+  list-style: none;
+  line-height: 30px;
+}
+#loginPopdiv:hover #loginPopul {
+  display: block;
 }

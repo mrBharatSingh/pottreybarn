@@ -97,7 +97,7 @@
 
 #CheckoutAddressInputDiv input {
   height: 57px;
-  width: 100%;
+  width: 97%;
   margin: 10px auto;
   border: 1px solid #d2d2d2;
   font-size: 20px;
@@ -428,4 +428,39 @@
 }
 #checkPP {
   margin: 20px 0px;
+}
+#checkimgapp {
+  width: 100px;
+}
+#infodivCk {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+#infodivCk div {
+  line-height: 30px;
+}
+#itemdivCk {
+  border-bottom: 1px solid #d2d2d2;
+  padding: 10px 0px;
+}
+#date {
+  font-weight: bold;
+  margin: 5px 0px 10px 0px;
+  font-weight: bold;
+  font-size: 18px;
+}
+#est {
+  color: #767c84;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#ckNext {
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid #d2d2d2;
+  width: fit-content;
+  margin: 10px 0px 10px 30%;
 }

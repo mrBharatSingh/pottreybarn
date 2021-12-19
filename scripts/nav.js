@@ -1,4 +1,7 @@
+
+
 // import wholeNav from './navMenu.js'
+
 
 import  {wholeNav,footer,ourValues, sustainability, design, inspiration, newNow, collaborations} from './navMenu.js'
 
@@ -116,6 +119,9 @@ var fHolidays=document.getElementById("navfHolidays")
 var fGifts=document.getElementById("navfGifts")
 var fSale=document.getElementById("navfSale")
 
+fFurniture.onclick=function(){
+    window.location.href="furniture.html"
+}
 
 var forthDisplay=document.getElementById("navFourthHover")
 import {furniture, outdoor, bedding, bath, rugs, windows, lighting, pillows, mirrors, tabletop, organization, holidays, gifts,sale}from './navMenu.js' 
@@ -123,6 +129,7 @@ import {furniture, outdoor, bedding, bath, rugs, windows, lighting, pillows, mir
  
 fFurniture.onmouseover=function(){
 forthDisplay.innerHTML=null
+
 forthDisplay.innerHTML=furniture()
 }
 fOutdoor.onmouseover=function(){
@@ -181,10 +188,24 @@ forthDisplay.innerHTML=sale()
 
 
 
+var gohome=document.getElementById("potteryLogo")
+
+gohome.onclick=function(){
+
+    window.location.href="index.html"
+}
 
 
+var cartIcon=document.getElementById("CartIcon")
+cartIcon.onclick=function(){
+    window.location.href="shoppingcart.html"
+}
 
+var cartlen=document.getElementById("CartIconP")
+function cartTlength(){
+    var cartArrdataxx=JSON.parse(localStorage.getItem("ShoppingCartData"))
+    cartlen.textContent="Cart("+cartArrdataxx.length+")"
 
-
-
+}
+cartTlength()
 
