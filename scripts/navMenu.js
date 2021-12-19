@@ -30,8 +30,15 @@ function wholeNav(){
                 alt="" id="potteryLogo">
         </div>
         <div id="navSecondOption">
-            <div><i class="fas fa-user-alt"></i>
+            <div id="loginPopdiv"><i class="fas fa-user-alt"></i>
                 <p>Sign In</p>
+                <ul id="loginPopul">
+                <li><a href="signup.html">Sign In</a></li>
+                <li><a href="signup.html">Create an Account</a></li>
+                <li><a href="">Earn Key Rewards</a></li>
+                <li><a href="">My Favorites</a></li>
+                <li><a href="">Registry</a></li>
+            </ul>
             </div>
             <div><i class="fas fa-home-heart"></i>
                 <p> Wedding Registry</p>
@@ -39,8 +46,8 @@ function wholeNav(){
             <div><i class="fas fa-heart"></i>
                 <p>Favorites</p>
             </div>
-            <div><i class="fas fa-shopping-cart"></i>
-                <p>Cart(0)</p>
+            <div id="CartIcon"><i class="fas fa-shopping-cart"></i>
+                <p id="CartIconP">Cart(0)</p>
             </div>
         </div>
 
