@@ -58,7 +58,7 @@ continueBtn.addEventListener("click",function(){
 var continueBtn1=document.getElementById("CheckoutAddConti1")
  
 continueBtn1.addEventListener("click",function(){
-    // box2.style.display="none"
+    box2.style.display="none"
     box3.style.display="block"
 })
 
@@ -89,6 +89,7 @@ continueBtn2.addEventListener("click",function(){
         window.location.href="index.html"
         
     }
+    else("Please valid Card Detail")
 
 })
 
