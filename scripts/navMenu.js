@@ -1702,6 +1702,6 @@ function sale(){
 
 </div>`
 }
-export {wholeNav,footer,ourValues, sustainability, design, inspiration, newNow, collaborations}
+module.exports {wholeNav,footer,ourValues, sustainability, design, inspiration, newNow, collaborations}
 
-export{furniture, outdoor, bedding, bath, rugs, windows, lighting, pillows, mirrors, tabletop, organization, holidays, gifts,sale}
+module.exports{furniture, outdoor, bedding, bath, rugs, windows, lighting, pillows, mirrors, tabletop, organization, holidays, gifts,sale}
